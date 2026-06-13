@@ -232,7 +232,7 @@ with tab5:
         st.write(f"Original dataset rows: **{n_original}**")
         st.write(f"User-submitted rows available: **{n_user}**")
 
-        if st.button("🔄 Retrain Now", type="primary"):
+        if st.button(" Retrain Now", type="primary"):
             if n_user == 0:
                 st.warning("No user-submitted data found yet. Retraining will use only the original dataset.")
                 combined_df = original_df.copy()
