@@ -1,0 +1,2 @@
+Gender,Age,Height,Weight,family_history_with_overweight,FAVC,FCVC,NCP,CAEC,SMOKE,CH2O,SCC,FAF,TUE,CALC,MTRANS,NObeyesdad,BMI,model_used,timestamp
+Male,20,1.7,70.0,no,yes,2.0,3.0,Sometimes,no,2.0,no,1.0,1.0,no,Walking,Normal_Weight,24.22,RandomForestClassifier,2026-06-13T14:28:38
