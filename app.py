@@ -37,11 +37,11 @@ confusions = artifacts["confusions"]
 class_labels = artifacts["class_labels"]
 best_model_name = artifacts["best_model_name"]
 
-st.title("🧍 Obesity Level Prediction Dashboard")
+st.title(" Obesity Level Prediction Dashboard")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "📊 Model Performance", "🔍 Confusion Matrix", "🧪 Predict Your Obesity Class",
-    "📁 Collected Submissions", "🔄 Retrain Model"
+    " Model Performance", " Confusion Matrix", " Predict Your Obesity Class",
+    " Collected Submissions", " Retrain Model"
 ])
 
 # ------------------------------------------------------------------
@@ -170,7 +170,7 @@ with tab3:
         else:
             save_df.to_csv(USER_DATA_PATH, mode="w", header=True, index=False)
 
-        st.caption(f"✅ Your input has been saved to `{USER_DATA_PATH}` for future model training.")
+        st.caption(f" Your input has been saved to `{USER_DATA_PATH}` for future model training.")
 
 
         if hasattr(model, "predict_proba"):
@@ -294,7 +294,7 @@ with tab5:
                     "best_model_name": new_best_name,
                 }, ARTIFACTS_PATH)
 
-            st.success("✅ Retraining complete! Model artifacts updated.")
+            st.success(" Retraining complete! Model artifacts updated.")
             st.write(f"New training set size: **{len(x_train)} rows** "
                      f"(total combined dataset: **{len(combined_df)} rows**)")
             st.dataframe(new_results_df.reset_index(drop=True), use_container_width=True)
